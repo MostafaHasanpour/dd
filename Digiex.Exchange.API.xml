@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Digiex.Exchange.API</name>
+    </assembly>
+    <members>
+        <member name="T:Digiex.Exchange.API.Accounts.AccountController">
+            <summary>
+              <br />
+            </summary>
+        </member>
+        <member name="M:Digiex.Exchange.API.TransactionRequests.Dealings.BuyTransactionRequestController.Step1Async(Digiex.Dtos.TransactionRequests.Dealings.BuyRequestStep1Dto,System.Threading.CancellationToken)">
+            <summury>
+            
+            </summury>
+            
+            <remarks>
+            Sample request:
+            
+                POST api/v2/requests/buy/step1
+                {        
+                  "cryptocurrencyId": 0,
+                  "amount": 40,
+                  "totalPrice": 1480,
+                  "price": 37,
+                  "priceHistoryId": 6,
+                  "discountCode": "discount1"     
+                }
+            </remarks>
+            <param name="model"></param>   
+        </member>
+        <member name="M:Digiex.Exchange.API.TransactionRequests.Dealings.SellTransactionRequestController.GetAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>Get all buy requests</summary>
+            <param name="pageSize">Size of the page.</param>
+            <param name="pageNumber">The page number.</param>
+            <returns cref="T:Digiex.Dtos.TransactionRequests.Dealings.GetDealingTransactionRequestResultDto">List</returns>
+            <exception cref="T:Digiex.Pakages.Exceptions.NotFoundException">تراکنشی یافت نشد...</exception>
+        </member>
+        <member name="M:Digiex.Exchange.API.TransactionRequests.Dealings.SellTransactionRequestController.GetAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>Get all buy requests</summary>
+            <param name="id">Id.</param>
+            <returns cref="T:Digiex.Dtos.TransactionRequests.Dealings.GetDealingTransactionRequestResultDto"></returns>
+            <exception cref="T:Digiex.Pakages.Exceptions.NotFoundException">تراکنشی یافت نشد...</exception>
+        </member>
+        <member name="M:Digiex.Exchange.API.TransactionRequests.Dealings.SellTransactionRequestController.Step1Async(Digiex.Dtos.TransactionRequests.Dealings.SellRequestDto,System.Threading.CancellationToken)">
+            <summary>Step1s for sell.</summary>
+            <param name="model">The model.</param>
+            <param name="cancellationToken"></param>
+            <returns>Guid</returns>
+        </member>
+    </members>
+</doc>
